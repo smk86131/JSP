@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //창이 불러와지자마자 수행하시오
+        //최신문법
+        document.addEventListener('DOMContentLoaded', ()=> { 
+            let ex = document.getElementById('ex')
+            ex.style.background = 'springgreen'
+
+            //이벤트 추가
+            // ex.onclick = function(){
+            //     this.style.color='red'
+            // }
+            ex.addEventListener('click', function() {this.style.color='gold'})
+        })
+        
+        
+    </script>
+</head>
+<body>
+    <h1 id = "ex">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore consequuntur possimus quo sit atque. Qui repellendus iusto nam eaque, dicta, tempora accusantium voluptatibus aspernatur quis deserunt est doloribus ab adipisci.</h1>
+</body>
+</html>
